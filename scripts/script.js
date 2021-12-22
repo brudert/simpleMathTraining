@@ -102,6 +102,9 @@ function newTrainQuestion(){
 	document.getElementById("train-answer").value = "";
 	ques = new Question();
 	document.getElementById("current-question").innerHTML = ques.getDisplayString();
+	document.getElementById("train-answer").value = "";
+	document.getElementById("train-answer").focus();
+	document.getElementById("train-answer").select();
 }
 
 function initTrain(){
