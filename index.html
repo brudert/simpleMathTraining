@@ -1,4 +1,83 @@
 <!DOCTYPE html>
 <html>
-  
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="./style/style.css">
+		<script src="./scripts/script.js"></script>
+	</head>
+	<body onload="main()">
+		<header>
+			<div id="display-icon">
+				<img id="light-mode" src="./assets/light.svg" width="100%" height="100%">
+				<img id="dark-mode" src="./assets/dark.svg" width="100%" height="100%">
+			</div>
+			<div id="home-icon">
+				<img id="light-mode" src="./assets/home-light.svg" width="100%" height="100%">
+				<img id="dark-mode" src="./assets/home-dark.svg" width="100%" height="100%">
+			</div>
+		</header>
+
+		<div id="content">
+			<div id="menu" style="opacity:100%;display:block;">
+				<table>
+					<tbody>
+						<tr>
+							<td rowspan="2">
+								<div id="logo">
+									<h1>Mental Math Workout</h1>
+									<p>train your brain to do math!</p>
+								</div>
+							</td>
+							<td><button id="test-button">Test</button></td>
+						</tr>
+						<tr>
+							<td><button id="train-button">Train</button></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<div id="quizz" style="opacity:0%;display:none;">
+				<table id="quizz-questions">
+					<tbody>
+						<tr><td colspan="2"><p id="timer">0:00</p></td></tr>
+						<tr><td colspan="2"><p id="question">Press Start to start!</p></td></tr>
+						<tr>
+							<td>
+								<input type="number">
+							</td>
+							<td>
+								<button id="submit-test">Start</button>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div id="quizz-answer" style="opacity:0%;display:none;">
+							<div>p id="results">20/20</p></div>
+							<div>
+								<button id="submit-test">Start</button>
+							</div>
+				</div>
+			</div>
+
+
+			<div id="train" style="opacity:0%;display:none;">
+				<table>
+					<tbody>
+						<tr><td colspan="2"><p id="old-question">old</p></td></tr>
+						<tr><td colspan="2"><p id="current-question">new</p></td></tr>
+						<tr>
+							<td>
+								<input type="number" id="train-answer">
+							</td>
+							<td>
+								<button id="submit-train">Start</button>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</body>
 </html>

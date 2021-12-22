@@ -1,0 +1,138 @@
+/* body */
+
+body{
+	background-color : #F8F8F8;
+	color : #000000;
+	font-family : Roboto, Arial;
+	
+	-webkit-transition-property: background-color, opacity, color;
+	-webkit-transition: 1s ease-in-and-out;
+	-moz-transition-property: background-color, opacity, color;
+	-moz-transition: 1s ease-in-and-out;
+	-o-transition-property: background-color, opacity, color;
+	-o-transition: 1s ease-in-and-out;
+	transition-property: background-color, opacity, color;
+	transition: 1s ease-in-and-out;
+}
+
+/* cancels transitions */
+.notransition {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
+}
+
+/* header */
+
+header {
+	overflow : hidden;
+}
+
+header > div{
+	float: right;
+	display : inline;
+	padding: 10px;
+}
+
+#display-icon, #home-icon {
+	-webkit-transition: 1s ease-in-and-out;
+	-webkit-transition-property: opacity, transform;
+	-moz-transition: 1s ease-in-and-out;
+	-moz-transition-property: opacity, transform;
+	-o-transition: 1s ease-in-and-out;
+	-o-transition-property: opacity, transform;
+	transition: 1s ease-in-and-out;
+	transition-property: opacity, transform;
+	
+	width: 60px;
+	height: 60px;
+}
+
+#display-icon:hover {
+	transform: rotate(360deg);
+	opacity : 50%;
+}
+
+#home-icon:hover {
+	opacity : 50%;
+}
+
+body.dark-theme{
+	background-color : #111;
+	color : #FFFFFF;
+}
+
+#light-mode{
+	opacity : 90%;
+	display : inherit;
+}
+
+#dark-mode{
+	opacity : 90%;
+	display : none;
+}
+
+.dark-theme #light-mode{
+	display : none;
+}
+
+.dark-theme #dark-mode{
+	display : inherit;
+}
+
+/* buttons */
+
+button {
+	border : 3px solid #000000;
+	background-color : #FFFFFF;
+	color : #000000;
+	
+	border-radius: 999em;
+	padding : 20px;
+	font-size: x-large;
+}
+
+.dark-theme button {
+	border :3px solid #FFFFFF;
+	background-color : #000000;
+	color : #FFFFFF;
+}
+
+/* menu styles */
+
+table {
+	border : 5px solid red;
+	border-collapse: collapse;
+}
+
+table td{
+	border : 5px solid red;
+}
+
+#menu h1 {
+	
+	font-size: xxx-large;
+}
+
+
+/* main divs */
+
+#quizz, #menu, #train {
+	transition: opacity 1s;
+}
+
+/* initial opacity and display */
+
+#quizz{
+	opacity: 0%;
+	display : none;
+}
+#menu {
+	opacity: 100%;
+	display : block;
+}
+#train {
+	opacity: 0%;
+	display : none;
+}
